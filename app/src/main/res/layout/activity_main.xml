@@ -8,47 +8,67 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_cofee_weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="咖啡粉量" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_cofee_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="咖啡粉量" />
 
-    <EditText
-        android:id="@+id/ed_cofee_weight"
-        android:layout_width="117dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="5dp"
-        android:ems="10"
-        android:textSize="16sp"
-        android:inputType="textPersonName"/>
+        <EditText
+            android:id="@+id/ed_cofee_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:textSize="15sp"
+            android:inputType="textPersonName"/>
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/tv_water_ratio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="水量比例" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_water_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="水量比例" />
 
-    <EditText
-        android:id="@+id/ed_water_ratio"
-        android:layout_width="117dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="5dp"
-        android:ems="10"
-        android:textSize="16sp"
-        android:inputType="textPersonName"/>
+        <EditText
+            android:id="@+id/ed_water_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textSize="15sp"
+            android:inputType="textPersonName"/>
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/calcu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="16dp"
-        android:text="Calculate" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+            <Button
+            android:id="@+id/calcu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:text="計算" />
+    </LinearLayout>
+
+
+
+
+
 
 </LinearLayout>
