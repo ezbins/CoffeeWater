@@ -13,11 +13,35 @@
         android:layout_height="66dp"
         android:orientation="horizontal">
         <TextView
-            android:id="@+id/tv_cofee_weight"
+            android:id="@+id/tv_times"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:text="沖水次數" />
+
+        <EditText
+            android:id="@+id/ed_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:textSize="15sp"
+            android:inputType="textPersonName"
+            android:hint="輸入沖水次數"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_cofee_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
             android:text="咖啡粉量" />
 
         <EditText
@@ -25,10 +49,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
             android:ems="10"
             android:textSize="15sp"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName"
+            android:hint="輸入咖啡粉重"/>
     </LinearLayout>
 
     <LinearLayout
@@ -50,7 +75,8 @@
             android:layout_marginTop="10dp"
             android:ems="10"
             android:textSize="15sp"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName"
+            android:hint="輸入水的比例"/>
     </LinearLayout>
 
     <LinearLayout
@@ -64,11 +90,13 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="16dp"
             android:text="計算" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:text="清除" />
     </LinearLayout>
-
-
-
-
-
-
 </LinearLayout>
